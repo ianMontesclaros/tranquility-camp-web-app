@@ -1,1 +1,1 @@
-# tranquility-camp
+# Tranquility Camp
