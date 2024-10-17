@@ -59,8 +59,8 @@ Tranquility Camp Web App is a hotel management web app for Tranquility Camp, a b
      ![Chart stay durations](https://github.com/user-attachments/assets/d8d15b58-5954-45cb-b509-f2ef0d431ee0)
 
    *  View a chart showing all daily hotel sales, showing both “total” sales and “extras” sales (only breakfast) in the last 7, 30, or 90 days.
-   
-     ![Chart sales](https://github.com/user-attachments/assets/6e56ce52-5a91-4c50-9a6a-6441cc91bf76)
+
+     ![Chart sales](https://github.com/user-attachments/assets/76e49879-8833-4b28-94b2-b1692e4eb744)
 
 4. Settings: Configure the minimum number of nights per booking, maximum number of nights per booking, maximum number of guests per booking, and breakfast price.
   
