@@ -46,11 +46,22 @@ Tranquility Camp Web App is a hotel management web app for Tranquility Camp, a b
 
 
 3. Dashboard
-   *  View a list of guests checking in and out for today and check in or check out each guest.
-   *  View the number of guests, sales, checkins, and occupancy rate in the last 7, 30, or 90 days.
+   *  View a list of guests that'll be checking in and out for today with the shortcut of checking each guest in or out.
+   
+     ![View list of guests](https://github.com/user-attachments/assets/de0619f1-b957-4f61-8ab3-ff7354d97ab3)
+
+   *  View the number of bookings, sales, check ins, and occupancy rate in the last 7, 30, or 90 days.
+   
+     ![Statistics](https://github.com/user-attachments/assets/1437deb4-e80a-49cf-b2e7-a1d0e44e0756)
+
    *  View a chart showing statistics on stay durations in the last 7, 30, or 90 days.
+   
+     ![Chart stay durations](https://github.com/user-attachments/assets/d8d15b58-5954-45cb-b509-f2ef0d431ee0)
+
    *  View a chart showing all daily hotel sales, showing both “total” sales and “extras” sales (only breakfast) in the last 7, 30, or 90 days.
-  
+   
+     ![Chart sales](https://github.com/user-attachments/assets/6e56ce52-5a91-4c50-9a6a-6441cc91bf76)
+
 4. Settings: Configure the minimum number of nights per booking, maximum number of nights per booking, maximum number of guests per booking, and breakfast price.
   
    ![Settings](https://github.com/user-attachments/assets/30e80eb1-9e51-4951-a87a-e59184d65301)
