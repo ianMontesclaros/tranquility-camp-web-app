@@ -93,7 +93,7 @@ function SalesChart({ bookings, numDays }: any) {
             fill={colors.totalSales.fill}
             strokeWidth={2}
             name="Total sales"
-            unit="$"
+            unit="€"
           />
           <Area
             dataKey="extrasSales"
@@ -102,7 +102,7 @@ function SalesChart({ bookings, numDays }: any) {
             fill={colors.extrasSales.fill}
             strokeWidth={2}
             name="Extras sales"
-            unit="$"
+            unit="€"
           />
         </AreaChart>
       </ResponsiveContainer>
