@@ -3,10 +3,8 @@ import { Pagination } from "@/components/utils";
 import { useBookings } from "@/hooks/bookings";
 
 import BookingRow from "./BookingRow";
-// import Pagination from "../../ui/Pagination";
 
 function BookingTable() {
-  // const bookings = [];
   const { bookings, isLoading, count } = useBookings();
 
   if (isLoading) return <Spinner />;

@@ -44,11 +44,9 @@ const Amount = styled.div`
 type BookingRowPropType = {
   booking: {
     id: number;
-    // created_at: string;
     startDate: string;
     endDate: string;
     numNights: number;
-    // numGuests: number;
     totalPrice: number;
     status: string;
     guests: { fullName: string; email: string };
@@ -59,11 +57,9 @@ type BookingRowPropType = {
 export default function BookingRow({
   booking: {
     id: bookingId,
-    // created_at,
     startDate,
     endDate,
     numNights,
-    // numGuests,
     totalPrice,
     status,
     guests: { fullName: guestName, email },

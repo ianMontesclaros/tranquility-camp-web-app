@@ -7,7 +7,6 @@ export default function useBookings() {
   const queryClient = useQueryClient();
   const [searchParams] = useSearchParams();
 
-  // filter
   const filterValue = searchParams.get("status");
   const filter =
     !filterValue || filterValue === "all"
@@ -15,15 +14,12 @@ export default function useBookings() {
       : { field: "status", value: filterValue };
   // { field: "totalPrice", value: 5000, method: "gte" };
 
-  // sort
   const sortByRaw = searchParams.get("sortBy") || "startDate-desc";
   const [field, direction] = sortByRaw.split("-");
   const sortBy = { field, direction };
 
-  // pagination
   const page = !searchParams.get("page") ? 1 : Number(searchParams.get("page"));
 
-  // query
   const {
     isLoading,
     data: { data: bookings, count } = {},
@@ -33,7 +29,6 @@ export default function useBookings() {
     queryFn: () => getBookings({ filter, sortBy, page }),
   });
 
-  // pre-fetching
   const pageCount = Math.ceil(count / PAGE_SIZE);
 
   if (page < pageCount)

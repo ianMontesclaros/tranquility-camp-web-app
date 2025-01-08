@@ -9,19 +9,15 @@ import { formatCurrency } from "@/utils/helpers";
 import Stat from "./Stat";
 
 function Statistics({ bookings, confirmedStays, numDays, cabinCount }: any) {
-  // 1.
   const numBookings = bookings.length;
 
-  // 2.
   const sales = bookings.reduce(
     (acc: any, cur: any) => acc + cur.totalPrice,
     0
   );
 
-  // 3.
   const checkins = confirmedStays.length;
 
-  // 4.
   const occupation =
     confirmedStays.reduce((acc: any, cur: any) => acc + cur.numNights, 0) /
     (numDays * cabinCount);

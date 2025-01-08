@@ -19,10 +19,8 @@ export async function getBookings({
       { count: "exact" }
     );
 
-  // filter
   if (filter) query = query[filter.method || "eq"](filter.field, filter.value);
 
-  // sort
   if (sortBy)
     query = query.order(sortBy.field, {
       ascending: sortBy.direction === "asc",
@@ -59,7 +57,7 @@ export async function getBooking(id: any) {
   return data;
 }
 
-// returns all BOOKINGS that are were created after the given date
+// returns all BOOKINGS that are created after the given date
 export async function getBookingsAfterDate(date: any) {
   const { data, error } = await supabase
     .from("bookings")
@@ -75,7 +73,7 @@ export async function getBookingsAfterDate(date: any) {
   return data;
 }
 
-// returns all STAYS that are were created after the given date
+// returns all STAYS that are created after the given date
 export async function getStaysAfterDate(date: any) {
   const { data, error } = await supabase
     .from("bookings")
@@ -91,7 +89,7 @@ export async function getStaysAfterDate(date: any) {
   return data;
 }
 
-// activity means that there is a check in or unconfirmed today today
+// activity means that there is a check in or unconfirmed today
 export async function getStaysTodayActivity() {
   const { data, error } = await supabase
     .from("bookings")

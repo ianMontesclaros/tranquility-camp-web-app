@@ -27,7 +27,6 @@ export async function createEditCabin(newCabin: any, id?: number) {
     ? newCabin.image
     : `${supabaseUrl}/storage/v1/object/public/${imageBucketName}/${imageName}`;
 
-  // create/edit cabin
   let query: any = supabase.from("cabins");
 
   if (!id) query = query.insert([{ ...newCabin, image: imagePath }]);
